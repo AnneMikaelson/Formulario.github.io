@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer satisfaction survey</title>
+</head>
+<body>
+    
+    <h1 id="title">Customer satisfaction survey on the service and the company</h1> 
+    <p id="description">This survey aims to know your opinion about the service 
+        you received from our company and about the company in general. 
+        Your answers will help us improve the quality of our service and 
+        better meet your needs. The survey is anonymous and will only take 
+        a few minutes. We appreciate your cooperation.</p>
+    <form action="https://register-demo.freecodecamp.org" method="post" 
+    id="survey-form">
+    <fieldset>
+        <label for="name" id="name-label">Enter your name: </label>
+        <input type="text" id="name" required placeholder="Full Name" 
+        class="personal-info">
+
+        <label for="number" id="number-label">Enter your age(optional)</label>
+        <input type="number" id="number" placeholder="Age" min="18" 
+        max="120" class="personal-info">
+
+        <label for="email" id="email-label">Enter your email</label>
+        <input type="email" id="email" placeholder="example@gmail.com" 
+        required class="personal-info">
+    </fieldset>
+
+    <fieldset>
+        <label for="dropdown">What service did you receive from 
+            our company?</label>
+        <select id="dropdown" name="dropdown" required>
+            <option disabled selected value="">Select One Option</option>
+            <option value="1">Consulting</option>
+            <option value="2">Training</option>
+            <option value="3">Technical Support</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <p id="lb-quality">How would you rate the quality of the 
+            service received?</p>
+        <label for="rb-excellent"> <input type="radio" name="rb-quality" 
+            id="rb-excellent" class="quality" checked>Excellent</label>
+        <label for="rb-VG"> <input type="radio" name="rb-quality" 
+            id="rb-VG" class="quality">Very Good</label>
+        <label for="rb-good"> <input type="radio" name="rb-quality" 
+            id="rb-good" class="quality">Good</label>
+        <label for="rb-regular"> <input type="radio" name="rb-quality" 
+            id="rb-regular" class="quality">Regular</label>
+        <label for="rb-Bad"> <input type="radio" name="rb-quality" 
+            id="rb-Bad" class="quality">Bad</label>
+    </fieldset>
+        
+    <fieldset>
+        <label for="dropdown2">Did the service meet your expectations?
+        </label>
+        <select id="dropdown2" name="dropdown2" required>
+            <option disabled selected value>Select One Option</option>
+            <option value="1">Yes, it exceeded my expectations</option>
+            <option value="2">Yes, it met my expectations</option>
+            <option value="3">No, it did not meet my expectations</option>
+            <option value="4">No, it was very disappointing</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <p>What aspects of the service did you like the most?</p> 
+        <p class="optional">(You can select more than one option)</p>
+        <label for="op1"><input type="checkbox" value="op1" 
+            id="op1">The professionalism of the staff</label>
+        <label for="op2"><input type="checkbox" value="op2" 
+            id="op2">The speed in the attention</label>
+        <label for="op3"><input type="checkbox" value="op3" 
+            id="op3">The clarity in the communication</label>
+        <label for="op4"><input type="checkbox" value="op4" 
+            id="op4">The solution of problems or doubts</label>
+        <label for="op5"><input type="checkbox" value="op5" 
+            id="op5">The price or the quality-price ratio</label>
+        <label for="op6"><input type="checkbox" value="op6" 
+            id="op6">Other (specify):</label><textarea name="service" id="service" cols="50" rows="3" placeholder="Enter your text here"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <p>What suggestions do you have to improve our service or our company?</p>
+        <textarea name="suggestion" id="suggestion" cols="50" rows="10" 
+        placeholder="Enter your suggestions here(It's optional)"></textarea>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit">
+
+</form>
+    
+</body>
+</html>
